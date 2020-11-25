@@ -18,6 +18,4 @@ def animal_noise():
         noise = "moo"
     elif animal == "duck":
         noise = "quack"
-    else:
-        noise = "Noise is unknown"
     return Response(noise, mimetype='text/plain')
