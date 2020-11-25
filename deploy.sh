@@ -1,3 +1,3 @@
 #! /bin/bash
 
-sudo docker-compose up
+sudo docker stack deploy --compose-file docker-compose.yaml app
