@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Testing'){
                 steps{
-                    slackSend channel: '#jenkins', message: 'starting services'
+                    slackSend channel: '#jenkins', message: 'Starting services'
                     sh "./scripts/test.sh"
                 }
             }
@@ -20,7 +20,7 @@ pipeline{
             }
             stage('Slack send'){
                 steps{
-                    slackSend channel: '#jenkins', message: 'success'
+                    slackSend channel: '#jenkins', message: 'App running successfully'
                 }
             }
         }
