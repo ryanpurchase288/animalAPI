@@ -14,6 +14,7 @@ pipeline{
             stage('Deploy App'){
                 steps{
                     sh "./scripts/deploy.sh"
+                    slackSend channel: '#jenkins', message: 'success'
                 }
             }
         }
