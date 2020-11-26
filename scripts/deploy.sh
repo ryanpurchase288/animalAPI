@@ -1,3 +1,3 @@
 #! /bin/bash
-
-sudo docker stack deploy --compose-file docker-compose.yaml app
+docker-compose pull
+sudo docker stack deploy --compose-file docker-compose.yaml animalApp
